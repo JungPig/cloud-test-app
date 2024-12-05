@@ -4,7 +4,7 @@ const Menupage = () => {
   const [menu, setMenu] = useState([]);
 
   useEffect(() => {
-    fetch('https://www.jungpigapp.shop:9074/menu/select')
+    fetch('https://www.jungpigapp.shop:443/menu/select')
       .then((response) => response.json())
       .then((data) => setMenu(data))
       .catch((error) => console.error('Error fetching menu:', error));
